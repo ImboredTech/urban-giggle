@@ -17,7 +17,7 @@ async def on_ready():
 # Loads a cog.
 @bot.command()
 async def load(ctx, extension):
-    if ctx.author.id == config.owner_id:
+    if ctx.author.id == 866285734808780812:
         bot.load_extension(f"cogs.{extension}")
         await ctx.send(f"Loaded {extension}.")
     else:
@@ -27,7 +27,7 @@ async def load(ctx, extension):
 # Unloads a cog.
 @bot.command()
 async def unload(ctx, extension):
-    if ctx.author.id == config.owner_id:
+    if ctx.author.id == 866285734808780812:
         bot.unload_extension(f"cogs.{extension}")
         await ctx.send(f"Unloaded {extension}.")
     else:
@@ -37,7 +37,7 @@ async def unload(ctx, extension):
 # Reloads a cog
 @bot.command()
 async def reload(ctx, extension):
-    if ctx.author.id == config.owner_id:
+    if ctx.author.id == 866285734808780812:
         bot.reload_extension(f"cogs.{extension}")
         await ctx.send(f"Reloaded {extension}.")
     else:
